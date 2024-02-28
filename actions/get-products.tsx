@@ -11,6 +11,7 @@ interface Query {
 }
 
 const getProducts = async (query: Query): Promise<Product[]> => {
+  console.log("query", query);
   const url = qs.stringifyUrl({
     url: URL,
     query: {
