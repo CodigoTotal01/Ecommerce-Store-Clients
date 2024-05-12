@@ -26,7 +26,6 @@ const Filter: React.FC<FilterProps> = ({ data, name, valueKey }) => {
       [valueKey]: id,
     };
 
-    console.log("current", current);
     if (current[valueKey] === id) {
       query[valueKey] = null;
     }
